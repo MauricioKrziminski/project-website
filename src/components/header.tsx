@@ -2,9 +2,10 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-scroll'
 import { AiFillHome } from 'react-icons/ai'
-import { FaUserAlt } from 'react-icons/fa'
+import { FaUserAlt, FaBars } from 'react-icons/fa'
 import { RiServiceFill } from 'react-icons/ri'
 import { IoMdContacts } from 'react-icons/io'
+import { CgClose } from 'react-icons/cg'
 import { motion } from 'framer-motion'
 
 type IconRefs = {
@@ -13,6 +14,7 @@ type IconRefs = {
 
 export function Header() {
   const [activeSection, setActiveSection] = useState<string>('')
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const iconRefs: IconRefs = {
     home: useRef<HTMLLIElement | null>(null),
@@ -62,14 +64,21 @@ export function Header() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 w-full border-b border-gray-200 bg-white/70 shadow-sm backdrop-blur-sm transition-all duration-300">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between p-6 lg:p-5">
-        <div className="bg-wave-gradient bg-clip-text text-base font-extrabold text-transparent lg:text-3xl">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between p-6 lg:p-6">
+        <div className="bg-wave-gradient whitespace-nowrap bg-clip-text text-lg font-extrabold text-transparent lg:text-2xl">
           O SITE PARA VOCÊ
         </div>
-        <nav className="flex-1 text-center">
-          <ul className="relative flex justify-center space-x-4">
+        <div className="ml-40 lg:hidden">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <CgClose size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
+        <nav
+          className={`absolute right-0 top-full h-screen w-3/5 bg-white/90 lg:relative lg:block lg:h-0 lg:w-0 lg:bg-transparent lg:shadow-none ${isMenuOpen ? 'block' : 'hidden'}`}
+        >
+          <ul className="mt-36 flex h-full flex-col items-center justify-start space-y-6 lg:mt-0 lg:flex lg:flex-row lg:justify-end lg:space-x-6 lg:space-y-0">
             <motion.div
-              className="absolute bottom-[-8px] h-1 rounded-sm bg-violet-500"
+              className="absolute bottom-[-18px] h-1 rounded-sm bg-violet-500"
               initial={false}
               animate={{ left, width }}
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
@@ -81,7 +90,8 @@ export function Header() {
                 duration={100}
                 className={getIconClassName('home')}
               >
-                <AiFillHome size={22} />
+                <AiFillHome className="hidden lg:inline" size={26} />
+                <span className="inline text-xl lg:hidden">Home</span>
               </Link>
             </li>
             <li ref={iconRefs.about}>
@@ -91,7 +101,8 @@ export function Header() {
                 duration={100}
                 className={getIconClassName('about')}
               >
-                <FaUserAlt size={22} />
+                <FaUserAlt className="hidden lg:inline" size={26} />
+                <span className="inline text-xl lg:hidden">About</span>
               </Link>
             </li>
             <li ref={iconRefs.services}>
@@ -101,7 +112,8 @@ export function Header() {
                 duration={100}
                 className={getIconClassName('services')}
               >
-                <RiServiceFill size={22} />
+                <RiServiceFill className="hidden text-xl lg:inline" size={26} />
+                <span className="inline text-xl lg:hidden">Services</span>
               </Link>
             </li>
             <li ref={iconRefs.contact}>
@@ -111,7 +123,8 @@ export function Header() {
                 duration={100}
                 className={getIconClassName('contact')}
               >
-                <IoMdContacts size={22} />
+                <IoMdContacts className="hidden text-xl lg:inline" size={26} />
+                <span className="inline text-xl lg:hidden">Contact</span>
               </Link>
             </li>
           </ul>
