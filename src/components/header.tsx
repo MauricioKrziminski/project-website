@@ -44,7 +44,7 @@ export function Header() {
   }, [])
 
   const getIconClassName = (section: string) =>
-    `cursor-pointer ${activeSection === section ? 'text-violet-500' : 'text-gray-900 hover:text-gray-600'}`
+    `cursor-pointer ${activeSection === section ? 'text-violet-500' : 'text-gray-900 hover:text-violet-500'}`
 
   const getIndicatorPosition = () => {
     const currentIcon = iconRefs[activeSection]?.current
@@ -63,7 +63,9 @@ export function Header() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 w-full border-b border-gray-200 bg-white/70 shadow-sm backdrop-blur-sm transition-all duration-300">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between p-6">
-        <div className="text-lg font-bold text-gray-900">Logo</div>
+        <div className="bg-gradient-wave animate-wave bg-clip-text text-xl font-bold text-transparent">
+          O site para você
+        </div>
 
         <nav className="flex-1 text-center">
           <ul className="relative flex justify-center space-x-4">

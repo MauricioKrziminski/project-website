@@ -10,3 +10,42 @@ section {
   padding-top: 100px;
   margin-top: -100px; 
 }
+
+@keyframes gradientX {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradientX 5s ease infinite;
+}
+
+/* Definindo o gradiente e animação */
+.text-gradient {
+  background: linear-gradient(90deg, rgba(29,78,216,1) 0%, rgba(219,39,119,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientX 5s ease infinite;
+  background-size: 200% auto;
+}
