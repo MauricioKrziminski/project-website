@@ -11,41 +11,31 @@ section {
   margin-top: -100px; 
 }
 
-@keyframes gradientX {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes waveAnimation {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.text-lg {
-  font-size: 1.125rem; /* 18px */
-  line-height: 1.75rem; /* 28px */
-}
-
-.font-bold {
-  font-weight: bold;
-}
-
-.text-transparent {
-  color: transparent;
+.bg-wave-gradient {
+  background: linear-gradient(90deg, rgb(231, 84, 212), rgb(64, 235, 149), rgb(231, 84, 212));
+  background-size: 200% 100%;
+  animation: waveAnimation 5s linear infinite;
 }
 
 .bg-clip-text {
   -webkit-background-clip: text;
   background-clip: text;
-}
-
-.animate-gradient-x {
-  background-size: 200% 200%;
-  animation: gradientX 5s ease infinite;
-}
-
-/* Definindo o gradiente e animação */
-.text-gradient {
-  background: linear-gradient(90deg, rgba(29,78,216,1) 0%, rgba(219,39,119,1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
-  animation: gradientX 5s ease infinite;
-  background-size: 200% auto;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
 }
