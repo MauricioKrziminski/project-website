@@ -12,16 +12,10 @@ export function ContactSection() {
               informações.
             </p>
             <div className="flex items-center space-x-4">
-              <a
-                href="https://wa.me/yourwhatsappnumber"
-                className="text-green-500 hover:text-green-600"
-              >
+              <a href="#" className="text-green-500 hover:text-green-600">
                 <BsWhatsapp size={24} />
               </a>
-              <a
-                href="https://instagram.com/yourusername"
-                className="text-pink-500 hover:text-pink-600"
-              >
+              <a href="#" className="text-pink-500 hover:text-pink-600">
                 <BsInstagram size={24} />
               </a>
             </div>

@@ -7,32 +7,32 @@ export function ServicesSection() {
         </h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
-            <h3 className="mb-4 text-xl font-semibold">Serviço #1</h3>
+            <h3 className="mb-4 text-xl font-semibold">Sites Personalizados</h3>
             <p className="mb-4 text-gray-700">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-              a corrupti fuga nostrum perspiciatis illo, quibusdam eius magni
-              autem quam ipsam commodi deleniti assumenda deserunt ullam
-              tempora, quasi illum veritatis.
+              Desenvolvimento de sites sob medida, criando uma experiência única
+              online que reflete a essência de sua marca e atende às suas
+              necessidades específicas.
             </p>
           </div>
 
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
-            <h3 className="mb-4 text-xl font-semibold">Serviço #2</h3>
+            <h3 className="mb-4 text-xl font-semibold">Design Responsivo</h3>
             <p className="mb-4 text-gray-700">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Expedita, eaque odio! Mollitia, quisquam quis. Doloremque
-              explicabo ad perspiciatis aspernatur, dolores neque modi delectus
-              dignissimos sit magni necessitatibus sapiente ut facere.
+              Criação de designs que se adaptam a qualquer dispositivo,
+              garantindo que seu site ofereça uma experiência perfeita tanto em
+              desktops quanto em dispositivos móveis.
             </p>
           </div>
 
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
-            <h3 className="mb-4 text-xl font-semibold">Serviço #3</h3>
+            <h3 className="mb-4 text-xl font-semibold">
+              Manutenção Após Entrega
+            </h3>
             <p className="mb-4 text-gray-700">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Corporis, repellendus iusto. Voluptatum aspernatur culpa
-              necessitatibus officiis commodi hic sed itaque omnis, reiciendis
-              autem reprehenderit fugit inventore cum, non repudiandae quisquam?
+              Ofereço suporte contínuo e manutenção do site após a entrega,
+              garantindo que seu site permaneça atualizado, seguro e funcionando
+              perfeitamente, para que você possa focar no que realmente importa:
+              seu negócio.
             </p>
           </div>
         </div>

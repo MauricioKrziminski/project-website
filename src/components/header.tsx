@@ -62,11 +62,10 @@ export function Header() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 w-full border-b border-gray-200 bg-white/70 shadow-sm backdrop-blur-sm transition-all duration-300">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between p-6">
-        <div className="bg-wave-gradient bg-clip-text text-xl font-bold">
-          O site para você
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between p-6 lg:p-5">
+        <div className="bg-wave-gradient bg-clip-text text-base font-extrabold text-transparent lg:text-3xl">
+          O SITE PARA VOCÊ
         </div>
-
         <nav className="flex-1 text-center">
           <ul className="relative flex justify-center space-x-4">
             <motion.div
@@ -118,7 +117,7 @@ export function Header() {
           </ul>
         </nav>
 
-        <div className="text-lg font-bold opacity-0">Logo</div>
+        <div className="flex-grow-0 opacity-0">Logo</div>
       </div>
     </header>
   )
