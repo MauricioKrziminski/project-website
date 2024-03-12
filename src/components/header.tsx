@@ -48,6 +48,10 @@ export function Header() {
   const getIconClassName = (section: string) =>
     `cursor-pointer ${activeSection === section ? 'text-violet-500' : 'text-gray-900 hover:text-violet-500'}`
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false)
+  }
+
   const getIndicatorPosition = () => {
     const currentIcon = iconRefs[activeSection]?.current
     if (currentIcon) {
@@ -89,6 +93,7 @@ export function Header() {
                 smooth={true}
                 duration={100}
                 className={getIconClassName('home')}
+                onClick={handleLinkClick}
               >
                 <AiFillHome className="hidden lg:inline" size={26} />
                 <span className="inline text-xl lg:hidden">Home</span>
@@ -100,6 +105,7 @@ export function Header() {
                 smooth={true}
                 duration={100}
                 className={getIconClassName('about')}
+                onClick={handleLinkClick}
               >
                 <FaUserAlt className="hidden lg:inline" size={26} />
                 <span className="inline text-xl lg:hidden">About</span>
@@ -111,6 +117,7 @@ export function Header() {
                 smooth={true}
                 duration={100}
                 className={getIconClassName('services')}
+                onClick={handleLinkClick}
               >
                 <RiServiceFill className="hidden text-xl lg:inline" size={26} />
                 <span className="inline text-xl lg:hidden">Services</span>
@@ -122,6 +129,7 @@ export function Header() {
                 smooth={true}
                 duration={100}
                 className={getIconClassName('contact')}
+                onClick={handleLinkClick}
               >
                 <IoMdContacts className="hidden text-xl lg:inline" size={26} />
                 <span className="inline text-xl lg:hidden">Contact</span>
