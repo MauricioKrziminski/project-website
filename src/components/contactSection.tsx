@@ -2,11 +2,13 @@ import { BsWhatsapp, BsInstagram } from 'react-icons/bs'
 
 export function ContactSection() {
   return (
-    <div className="min-h-[650px] bg-blue-600 pt-28">
+    <div className="flex min-h-[580px] justify-center bg-blue-600">
       <div className="mx-auto flex max-w-4xl flex-col justify-center px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-6 text-3xl font-bold text-white">Contate-nos</h2>
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div>
+            <h2 className="mb-14 flex max-w-48 text-3xl font-bold text-white">
+              Contate-nos
+            </h2>
             <p className="mb-4 text-white">
               Siga-nos nas redes sociais e entre em contato conosco para mais
               informações.
