@@ -2,7 +2,7 @@ import { BsWhatsapp, BsInstagram } from 'react-icons/bs'
 
 export function ContactSection() {
   return (
-    <div className="flex min-h-[580px] justify-center bg-blue-600">
+    <div className="flex min-h-[580px] justify-center bg-gray-900">
       <div className="mx-auto flex max-w-4xl flex-col justify-center px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div>

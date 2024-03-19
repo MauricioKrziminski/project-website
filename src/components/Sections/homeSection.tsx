@@ -2,24 +2,22 @@ import { ImageCarousel } from '../imageCarousel'
 
 export function HomeSection() {
   return (
-    <div className="mx-auto mb-0 mt-12 flex flex-col justify-center bg-[url('https://i.imgur.com/BOZDAF9.jpg')] bg-cover bg-no-repeat py-6 lg:py-12">
+    <div className="mt-12 flex flex-col justify-center bg-[url('https://i.imgur.com/BOZDAF9.jpg')] bg-cover bg-no-repeat py-6 lg:py-12">
       <ImageCarousel />
-      <h2 className="mb-4 ml-6 mt-16 p-4 text-2xl font-semibold text-white">
-        Explorando o Universo do Desenvolvimento
+      <h2 className="mb-4 mt-10 p-4 text-center text-2xl font-semibold text-white">
+        Nosso propósito
       </h2>
-      <p className="mb-4 ml-6 p-4 text-white">
-        Este site é uma demonstração do que podemos fazer juntos. Explore e
-        imagine as possibilidades para o seu próprio site.
-      </p>
-      <span>
-        <a
-          href="https://pay.kiwify.com.br/xJ644KN"
-          target="blank"
-          className="ml-10 flex items-center justify-start text-white"
-        >
-          clique
-        </a>
-      </span>
+      <div className="flex w-full justify-center px-4 lg:px-0">
+        <div className="rounded-lg bg-gray-800 bg-opacity-60 text-center md:w-1/2 lg:w-1/2">
+          <p className="mb-4 p-4 text-lg text-white">
+            A LAEC, criada em 6 de fevereiro de 2022, é uma associação sem fins
+            lucrativos ligada ao UniRitter. Nossa missão é estudar, pesquisar e
+            promover conhecimentos em Cardiologia, sem ligação religiosa ou
+            partidária. Queremos ajudar na formação acadêmica e profissional dos
+            alunos, contribuindo para o desenvolvimento nessa área.
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

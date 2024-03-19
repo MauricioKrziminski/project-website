@@ -4,6 +4,7 @@ import { AboutSection } from '@/components/Sections/aboutSection'
 import { ServicesSection } from '@/components/Sections/serviceSection'
 import { ContactSection } from '@/components/Sections/contactSection'
 import { HomeSection } from '@/components/Sections/homeSection'
+import { Footer } from '@/components/footer'
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
         <section id="contact">
           <ContactSection />
         </section>
+
+        <Footer />
       </main>
     </div>
   )

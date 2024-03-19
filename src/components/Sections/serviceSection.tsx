@@ -1,39 +1,93 @@
+import { BsInstagram, BsLinkedin } from 'react-icons/bs'
+
+/* eslint-disable @next/next/no-img-element */
 export function ServicesSection() {
   return (
-    <div className="min-h-[600px] bg-blue-950 py-12">
+    <div className="min-h-[600px] bg-[url('https://i.imgur.com/BOZDAF9.jpg')] bg-cover bg-no-repeat py-12">
       <div className="mx-auto mt-8 flex max-w-4xl flex-col justify-center px-4 sm:px-6 lg:px-8">
         <h2 className="mb-6 text-3xl font-extrabold text-white">
-          Nossos Serviços
+          Nossos Representantes
         </h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
-            <h3 className="mb-4 text-xl font-semibold">Sites Personalizados</h3>
-            <p className="mb-4 text-gray-700">
-              Desenvolvimento de sites sob medida, criando uma experiência única
-              online que reflete a essência de sua marca e atende às suas
-              necessidades específicas.
+            <h3 className="mb-4 text-xl font-semibold">Presidente Fundador</h3>
+            <img
+              src="https://i.imgur.com/0asTlVT.jpg"
+              alt=""
+              className="h-48 w-full rounded-lg object-cover"
+            />
+            <p className="mb-4 mt-2 text-center text-gray-700">
+              Jean Silva de Paula
             </p>
+            <p className="text-center italic">
+              Responsável por atividades técnicas e elaboração de conteúdos.
+            </p>
+            <div className="mr-2 mt-4 flex justify-end space-x-3">
+              <a
+                target="_blank"
+                href="#"
+                className="text-end hover:text-gray-700"
+              >
+                <BsInstagram size={18} />
+              </a>
+              <a target="_blank" href="#" className="hover:text-gray-700">
+                <BsLinkedin size={18} />
+              </a>
+            </div>
           </div>
 
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
-            <h3 className="mb-4 text-xl font-semibold">Design Responsivo</h3>
-            <p className="mb-4 text-gray-700">
-              Criação de designs que se adaptam a qualquer dispositivo,
-              garantindo que seu site ofereça uma experiência perfeita tanto em
-              desktops quanto em dispositivos móveis.
+            <h3 className="mb-4 text-xl font-semibold">Professor Fundador</h3>
+            <img
+              src="https://i.imgur.com/5lmrpvQ.jpg"
+              alt=""
+              className="h-48 w-full rounded-lg object-cover"
+            />
+            <p className="mb-4 mt-2 text-center text-gray-700">
+              Nichollas Costa
             </p>
+            <p className="text-center italic">
+              Responsável por atividades acadêmicas e orientação de projetos.
+            </p>
+            <div className="mr-2 mt-4 flex justify-end space-x-3">
+              <a
+                target="_blank"
+                href="#"
+                className="text-end hover:text-gray-700"
+              >
+                <BsInstagram size={18} />
+              </a>
+              <a target="_blank" href="#" className="hover:text-gray-700">
+                <BsLinkedin size={18} />
+              </a>
+            </div>
           </div>
 
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
-            <h3 className="mb-4 text-xl font-semibold">
-              Manutenção Após Entrega
-            </h3>
-            <p className="mb-4 text-gray-700">
-              Ofereço suporte contínuo e manutenção do site após a entrega,
-              garantindo que seu site permaneça atualizado, seguro e funcionando
-              perfeitamente, para que você possa focar no que realmente importa:
-              seu negócio.
+            <h3 className="mb-4 text-xl font-semibold">Bolão Moedas</h3>
+            <img
+              src="https://i.imgur.com/OGOkskX.jpg"
+              alt=""
+              className="h-48 w-full rounded-lg object-cover"
+            />
+            <p className="mb-4 mt-2 text-center text-gray-700">
+              Lorenzo Correa
             </p>
+            <p className="text-center italic">
+              Pega dinheiro dos outros e pede empréstimo pros brother.
+            </p>
+            <div className="mr-2 mt-4 flex justify-end space-x-3">
+              <a
+                target="_blank"
+                href="#"
+                className="text-end hover:text-gray-700"
+              >
+                <BsInstagram size={18} />
+              </a>
+              <a target="_blank" href="#" className="hover:text-gray-700">
+                <BsLinkedin size={18} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
