@@ -14,7 +14,7 @@ export function ServicesSection() {
             <img
               src="https://i.imgur.com/0asTlVT.jpg"
               alt=""
-              className="h-48 w-full rounded-lg object-cover"
+              className="w-full rounded-lg object-cover lg:h-48 lg:object-cover"
             />
             <p className="mb-4 mt-2 text-center text-gray-700">
               Jean Silva de Paula
@@ -41,7 +41,7 @@ export function ServicesSection() {
             <img
               src="https://i.imgur.com/5lmrpvQ.jpg"
               alt=""
-              className="h-48 w-full rounded-lg object-cover"
+              className="w-full rounded-lg object-cover lg:h-48 lg:object-cover"
             />
             <p className="mb-4 mt-2 text-center text-gray-700">
               Nichollas Costa
@@ -68,7 +68,7 @@ export function ServicesSection() {
             <img
               src="https://i.imgur.com/OGOkskX.jpg"
               alt=""
-              className="h-48 w-full rounded-lg object-cover"
+              className="w-full rounded-lg object-cover lg:h-48 lg:object-cover"
             />
             <p className="mb-4 mt-2 text-center text-gray-700">
               Lorenzo Correa
