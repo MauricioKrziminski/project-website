@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
@@ -41,15 +42,29 @@ export function Header() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 w-full border-b border-gray-200 bg-white/70 shadow-sm backdrop-blur-sm transition-all duration-300">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between p-6 lg:p-6">
-        <div className="bg-wave-gradient cursor-pointer whitespace-nowrap bg-clip-text text-lg font-extrabold text-transparent lg:text-2xl">
+        <div className="flex cursor-pointer flex-row items-center">
           <Link
             to="home"
             smooth={true}
             duration={100}
             onClick={handleLinkClick}
           >
-            <span>LAEC</span>
+            <img
+              src="https://i.imgur.com/vkALo3F.png"
+              alt=""
+              className="h-14 w-14"
+            />
           </Link>
+          <img
+            src="https://i.imgur.com/TnOj0Ah.png"
+            alt=""
+            className="w-15 ml-4 h-12"
+          />
+          <img
+            src="https://i.imgur.com/vdHfmQE.png"
+            alt=""
+            className="w-15 mb-1 ml-1 h-[45px]"
+          />
         </div>
         <div className="ml-40 lg:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -73,7 +88,7 @@ export function Header() {
                 className={getIconClassName('home')}
                 onClick={handleLinkClick}
               >
-                <span className="inline text-xl">Home</span>
+                <span className="inline text-lg">Livros</span>
               </Link>
             </li>
             <li>
@@ -84,7 +99,7 @@ export function Header() {
                 className={getIconClassName('about')}
                 onClick={handleLinkClick}
               >
-                <span className="inline text-xl">About</span>
+                <span className="inline text-lg">Eventos</span>
               </Link>
             </li>
             <li>
@@ -95,7 +110,9 @@ export function Header() {
                 className={getIconClassName('services')}
                 onClick={handleLinkClick}
               >
-                <span className="inline text-xl">Services</span>
+                <span className="inline whitespace-nowrap text-lg">
+                  Materiais de apoio
+                </span>
               </Link>
             </li>
             <li>
@@ -106,7 +123,7 @@ export function Header() {
                 className={getIconClassName('contact')}
                 onClick={handleLinkClick}
               >
-                <span className="inline text-xl">Contact</span>
+                <span className="inline text-lg">Contact</span>
               </Link>
             </li>
           </ul>

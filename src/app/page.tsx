@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Header } from '@/components/header'
-import { AboutSection } from '@/components/aboutSection'
-import { ServicesSection } from '@/components/serviceSection'
-import { ContactSection } from '@/components/contactSection'
-import { HomeSection } from '@/components/homeSection'
+import { Header } from '@/components/Header/header'
+import { AboutSection } from '@/components/Sections/aboutSection'
+import { ServicesSection } from '@/components/Sections/serviceSection'
+import { ContactSection } from '@/components/Sections/contactSection'
+import { HomeSection } from '@/components/Sections/homeSection'
 
 export default function Home() {
   return (

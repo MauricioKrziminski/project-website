@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export function AboutSection() {
   return (
-    <div className="mx-auto mt-0 flex min-h-[500px] flex-col justify-center bg-blue-600 p-12 py-12 shadow-md">
+    <div className="mx-auto mt-0 flex min-h-[500px] flex-col justify-center bg-gray-900 p-12 py-12 shadow-md">
       <h2 className="mb-4 text-2xl font-semibold text-white">
         Por Que Escolher Nosso Serviço?
       </h2>
