@@ -2,7 +2,7 @@
 export function AboutSection() {
   return (
     <div className="mx-auto mt-0 flex min-h-[500px] justify-center bg-gray-900 p-6 shadow-md">
-      <div className="flex flex-col items-center justify-center space-y-8 md:flex-col lg:flex-col xl:flex-col 2xl:w-5/6 2xl:flex-row 2xl:space-x-14">
+      <div className="flex flex-col items-center justify-center space-y-8 md:flex-col lg:flex-col xl:flex-row xl:space-x-14 xl:px-10 2xl:w-5/6 2xl:flex-row 2xl:space-x-14">
         <div className="w-[350px] md:w-[90%] lg:h-96 lg:w-5/6">
           <iframe
             className="h-[300px] w-full rounded-md shadow-xl lg:h-full"
