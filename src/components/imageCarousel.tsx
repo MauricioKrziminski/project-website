@@ -106,14 +106,14 @@ export function ImageCarousel() {
         </div>
         <button
           onClick={prevSlide}
-          className="group absolute bottom-4 left-14 transform cursor-pointer items-center rounded-full p-2 hover:bg-gray-500 focus:outline-none md:start-0 md:top-1/2 md:-translate-y-1/2"
+          className="group absolute bottom-5 left-14 flex h-8 w-8 items-center justify-center rounded-full hover:bg-gray-500 focus:outline-none md:start-0 md:top-1/2 md:h-8 md:w-8 md:-translate-y-1/2"
         >
           <IoIosArrowBack className="text-2xl text-white" />
           <span className="sr-only">Previous</span>
         </button>
         <button
           onClick={nextSlide}
-          className="group absolute bottom-4 right-14 transform cursor-pointer items-center rounded-full p-2 hover:bg-gray-500 focus:outline-none md:end-0 md:top-1/2 md:-translate-y-1/2"
+          className="group absolute bottom-5 right-14 flex h-8 w-8 items-center justify-center rounded-full hover:bg-gray-500 focus:outline-none md:end-0 md:top-1/2 md:h-8 md:w-8 md:-translate-y-1/2"
         >
           <IoIosArrowForward className="text-2xl text-white" />
           <span className="sr-only">Next</span>
