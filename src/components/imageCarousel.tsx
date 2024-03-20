@@ -14,7 +14,7 @@ export function ImageCarousel() {
   const images = [
     {
       src: 'https://i.imgur.com/zmdtJZ4.png',
-      mobileSrc: 'https://i.imgur.com/aHn97vA.png',
+      mobileSrc: 'https://i.imgur.com/81MQOAx.png',
       buttonText: 'Clique aqui para comprar',
       link: 'https://pay.kiwify.com.br/xJ644KN',
     },
