@@ -51,9 +51,9 @@ export function ImageCarousel() {
 
   return (
     <div className="flex justify-center">
-      <div className="relative flex w-full overflow-hidden rounded-lg lg:w-4/5">
+      <div className="relative flex w-full overflow-hidden rounded-lg md:w-[90%] lg:w-5/6">
         <div
-          className="flex h-60 w-full md:h-[500px] lg:h-96"
+          className="flex h-60 w-full md:h-[200px] lg:h-64 xl:h-96"
           style={slideStyle}
         >
           {images.map((image, index) => (
