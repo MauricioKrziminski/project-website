@@ -6,7 +6,7 @@ import {
   IoIosArrowForward,
   IoIosPause,
   IoIosPlay,
-} from 'react-icons/io' // Importando ícones
+} from 'react-icons/io'
 
 export function ImageCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -14,7 +14,7 @@ export function ImageCarousel() {
   const images = [
     {
       src: 'https://i.imgur.com/zmdtJZ4.png',
-      mobileSrc: 'https://i.imgur.com/3Koy0Xu.png',
+      mobileSrc: 'https://i.imgur.com/aHn97vA.png',
       buttonText: 'Clique aqui para comprar',
       link: 'https://pay.kiwify.com.br/xJ644KN',
     },

@@ -3,7 +3,7 @@ export function AboutSection() {
   return (
     <div className="mx-auto mt-0 flex min-h-[500px] justify-center bg-gray-900 p-6 shadow-md">
       <div className="flex flex-col items-center justify-center space-y-8 md:flex-row md:space-x-12 md:space-y-0">
-        <div className="w-[400px] md:max-w-2xl lg:h-96 lg:w-1/2">
+        <div className="w-[350px] md:max-w-2xl lg:h-96 lg:w-1/2">
           <iframe
             className="h-[300px] w-full rounded-md shadow-xl lg:h-full"
             src="https://www.youtube.com/embed/TEnNwIRQUGI"
