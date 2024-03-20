@@ -3,9 +3,9 @@ import { BsWhatsapp, BsInstagram, BsLinkedin } from 'react-icons/bs'
 export function Footer() {
   return (
     <footer className="bg-zinc-700 p-6 text-white">
-      <div className="container mx-auto flex flex-col items-center justify-between px-4 sm:px-8 lg:flex-row lg:px-56">
+      <div className="container mx-auto flex flex-col items-center justify-between px-4 sm:px-8 lg:flex-col lg:px-56">
         <div className="mb-4 flex flex-col items-center sm:mb-0 sm:flex-row sm:space-x-6 lg:mb-0 lg:items-start">
-          <div className="mb-2 flex space-x-6">
+          <div className="mb-2 flex space-x-6 md:mt-2">
             {' '}
             <a target="_blank" href="#" className="hover:text-gray-700">
               <BsWhatsapp size={24} />
@@ -21,12 +21,12 @@ export function Footer() {
               <BsInstagram size={24} />
             </a>
           </div>
-          <span className="text-center text-lg lg:mb-0">
+          <span className="text-center text-lg lg:mb-0 lg:mt-2 lg:whitespace-nowrap">
             © {new Date().getFullYear()} Liga Acadêmica de Enfermagem em
             Cardiologia
           </span>
         </div>
-        <div className="flex items-center gap-6 whitespace-nowrap lg:mt-0">
+        <div className="flex items-center gap-6 whitespace-nowrap md:ml-20 lg:mt-0">
           <span>
             Desenvolvido por{' '}
             <a
