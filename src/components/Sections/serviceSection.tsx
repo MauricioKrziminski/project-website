@@ -3,7 +3,7 @@ import { BsInstagram, BsLinkedin } from 'react-icons/bs'
 /* eslint-disable @next/next/no-img-element */
 export function ServicesSection() {
   return (
-    <div className="min-h-[600px] bg-[url('https://i.imgur.com/BOZDAF9.jpg')] bg-cover bg-no-repeat py-12">
+    <div className="min-h-[600px] bg-[url('https://i.imgur.com/QlCR9go.png')] bg-cover bg-no-repeat py-12">
       <div className="mx-auto mt-8 flex max-w-4xl flex-col justify-center px-4 sm:px-6 lg:px-8">
         <h2 className="mb-6 text-3xl font-extrabold text-white">
           Nossos Representantes
@@ -12,7 +12,7 @@ export function ServicesSection() {
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
             <h3 className="mb-4 text-xl font-semibold">Presidente Fundador</h3>
             <img
-              src="https://i.imgur.com/0asTlVT.jpg"
+              src="https://i.imgur.com/8shyjJi.jpg"
               alt=""
               className="w-full rounded-lg object-cover lg:h-48 lg:object-cover"
             />
@@ -43,7 +43,7 @@ export function ServicesSection() {
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
             <h3 className="mb-4 text-xl font-semibold">Professor Fundador</h3>
             <img
-              src="https://i.imgur.com/5lmrpvQ.jpg"
+              src="https://i.imgur.com/omRnwdA.jpg"
               alt=""
               className="w-full rounded-lg object-cover lg:h-48 lg:object-cover"
             />
@@ -74,7 +74,7 @@ export function ServicesSection() {
           <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
             <h3 className="mb-4 text-xl font-semibold">Bolão Moedas</h3>
             <img
-              src="https://i.imgur.com/OGOkskX.jpg"
+              src="https://i.imgur.com/42vigke.jpg"
               alt=""
               className="w-full rounded-lg object-cover lg:h-48 lg:object-cover"
             />

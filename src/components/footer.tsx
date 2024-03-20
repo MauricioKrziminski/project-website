@@ -30,7 +30,7 @@ export function Footer() {
           <span>
             Desenvolvido por{' '}
             <a
-              href="https://www.linkedin.com/in/mauricio-krziminski/"
+              href="https://www.mauriciokrziminski.com.br/"
               target="_blank"
               className="underline"
             >

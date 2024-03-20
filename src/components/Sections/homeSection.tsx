@@ -2,7 +2,7 @@ import { ImageCarousel } from '../imageCarousel'
 
 export function HomeSection() {
   return (
-    <div className="mt-12 flex flex-col justify-center bg-[url('https://i.imgur.com/BOZDAF9.jpg')] bg-cover bg-no-repeat py-6 lg:py-12">
+    <div className="mt-12 flex flex-col justify-center bg-[url('https://i.imgur.com/QlCR9go.png')] bg-cover bg-no-repeat py-6 lg:py-12">
       <ImageCarousel />
       <h2 className="mb-4 mt-10 p-4 text-center text-2xl font-semibold text-white">
         Nosso propósito
