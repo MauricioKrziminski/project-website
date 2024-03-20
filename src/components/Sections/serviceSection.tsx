@@ -25,12 +25,16 @@ export function ServicesSection() {
             <div className="mr-2 mt-4 flex justify-end space-x-3">
               <a
                 target="_blank"
-                href="#"
+                href="https://www.instagram.com/jeaann.dp/"
                 className="text-end hover:text-gray-700"
               >
                 <BsInstagram size={18} />
               </a>
-              <a target="_blank" href="#" className="hover:text-gray-700">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/jean-silva-de-paula-1bb2241bb/"
+                className="hover:text-gray-700"
+              >
                 <BsLinkedin size={18} />
               </a>
             </div>
@@ -52,12 +56,16 @@ export function ServicesSection() {
             <div className="mr-2 mt-4 flex justify-end space-x-3">
               <a
                 target="_blank"
-                href="#"
+                href="https://www.instagram.com/professornichollas/"
                 className="text-end hover:text-gray-700"
               >
                 <BsInstagram size={18} />
               </a>
-              <a target="_blank" href="#" className="hover:text-gray-700">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/nichollas-costa-rosa-790304204/"
+                className="hover:text-gray-700"
+              >
                 <BsLinkedin size={18} />
               </a>
             </div>
@@ -79,12 +87,16 @@ export function ServicesSection() {
             <div className="mr-2 mt-4 flex justify-end space-x-3">
               <a
                 target="_blank"
-                href="#"
+                href="https://www.instagram.com/lorenzo.cs1/"
                 className="text-end hover:text-gray-700"
               >
                 <BsInstagram size={18} />
               </a>
-              <a target="_blank" href="#" className="hover:text-gray-700">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/lorenzo-corr%C3%AAa/"
+                className="hover:text-gray-700"
+              >
                 <BsLinkedin size={18} />
               </a>
             </div>

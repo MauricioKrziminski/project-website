@@ -51,7 +51,7 @@ export function ImageCarousel() {
 
   return (
     <div className="flex justify-center">
-      <div className="relative flex w-full overflow-hidden rounded-lg lg:w-3/4">
+      <div className="relative flex w-full overflow-hidden rounded-lg lg:w-4/5">
         <div
           className="flex h-60 w-full md:h-[500px] lg:h-96"
           style={slideStyle}
@@ -106,20 +106,16 @@ export function ImageCarousel() {
         </div>
         <button
           onClick={prevSlide}
-          className="group absolute start-0 top-1/2 z-30 flex -translate-y-1/2 transform cursor-pointer items-center px-4 focus:outline-none"
+          className="group absolute bottom-4 left-14 transform cursor-pointer items-center rounded-full p-2 hover:bg-gray-500 focus:outline-none md:start-0 md:top-1/2 md:-translate-y-1/2"
         >
-          <span className="rounded-full p-2 hover:bg-gray-500">
-            <IoIosArrowBack className="text-2xl text-white" />
-          </span>
+          <IoIosArrowBack className="text-2xl text-white" />
           <span className="sr-only">Previous</span>
         </button>
         <button
           onClick={nextSlide}
-          className="group absolute end-0 top-1/2 z-30 flex -translate-y-1/2 transform cursor-pointer items-center px-4 focus:outline-none"
+          className="group absolute bottom-4 right-14 transform cursor-pointer items-center rounded-full p-2 hover:bg-gray-500 focus:outline-none md:end-0 md:top-1/2 md:-translate-y-1/2"
         >
-          <span className="rounded-full p-2 hover:bg-gray-500">
-            <IoIosArrowForward className="text-2xl text-white" />
-          </span>
+          <IoIosArrowForward className="text-2xl text-white" />
           <span className="sr-only">Next</span>
         </button>
       </div>
