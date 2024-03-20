@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="antialiased">
       <body className={inter.className}>
-        <link rel="icon" href="https://i.imgur.com/vkALo3F.png" sizes="any" />
+        <link rel="icon" href="https://i.imgur.com/vXFgf59.png" sizes="any" />
         <div className="min-h-screen">
           <main className="pt-11">{children}</main>
         </div>

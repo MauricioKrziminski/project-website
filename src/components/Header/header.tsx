@@ -12,7 +12,7 @@ export function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'contact']
+      const sections = ['home', 'apresentação', 'representantes', 'contact']
       const scrollTop = window.pageYOffset + window.innerHeight / 3
 
       sections.forEach((section) => {
@@ -50,18 +50,18 @@ export function Header() {
             onClick={handleLinkClick}
           >
             <img
-              src="https://i.imgur.com/vkALo3F.png"
+              src="https://i.imgur.com/vXFgf59.png"
               alt=""
               className="h-14 w-14"
             />
           </Link>
           <img
-            src="https://i.imgur.com/TnOj0Ah.png"
+            src="https://i.imgur.com/o9pbYku.png"
             alt=""
             className="w-15 ml-4 h-12"
           />
           <img
-            src="https://i.imgur.com/vdHfmQE.png"
+            src="https://i.imgur.com/RGN01cM.png"
             alt=""
             className="w-15 mb-1 ml-1 h-[45px]"
           />
@@ -88,30 +88,30 @@ export function Header() {
                 className={getIconClassName('home')}
                 onClick={handleLinkClick}
               >
-                <span className="inline text-lg">Livros</span>
+                <span className="inline text-lg">Home</span>
               </Link>
             </li>
             <li>
               <Link
-                to="about"
+                to="apresentação"
                 smooth={true}
                 duration={100}
-                className={getIconClassName('about')}
+                className={getIconClassName('apresentação')}
                 onClick={handleLinkClick}
               >
-                <span className="inline text-lg">Eventos</span>
+                <span className="inline text-lg">Apresentação</span>
               </Link>
             </li>
             <li>
               <Link
-                to="services"
+                to="representantes"
                 smooth={true}
                 duration={100}
-                className={getIconClassName('services')}
+                className={getIconClassName('representantes')}
                 onClick={handleLinkClick}
               >
                 <span className="inline whitespace-nowrap text-lg">
-                  Materiais de apoio
+                  Representantes
                 </span>
               </Link>
             </li>
