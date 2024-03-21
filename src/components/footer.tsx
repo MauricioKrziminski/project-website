@@ -1,4 +1,4 @@
-import { BsWhatsapp, BsInstagram, BsLinkedin } from 'react-icons/bs'
+import { BsWhatsapp, BsInstagram, BsYoutube, BsSpotify } from 'react-icons/bs'
 
 export function Footer() {
   return (
@@ -22,7 +22,7 @@ export function Footer() {
           </p>
         </div>
         <div className="flex flex-col items-end 2xl:mr-16">
-          <span className="mb-2 mr-4 text-lg">Siga-nos</span>
+          <span className="mb-2 mr-9 text-lg">Siga-nos</span>
           <div className="flex space-x-4">
             <a
               target="_blank"
@@ -38,7 +38,15 @@ export function Footer() {
               rel="noopener noreferrer"
               className="hover:text-gray-300"
             >
-              <BsLinkedin size={24} />
+              <BsSpotify size={24} />
+            </a>
+            <a
+              target="_blank"
+              href="#"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300"
+            >
+              <BsYoutube size={24} />
             </a>
             <a
               target="_blank"
