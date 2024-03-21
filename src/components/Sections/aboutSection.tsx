@@ -12,26 +12,24 @@ export function AboutSection() {
             autoPlay={true}
             loop
             muted
+            playsInline
           ></video>
         </div>
 
         <div className="w-[350px] md:w-[90%] lg:w-5/6">
           <h2 className="mb-4 text-2xl font-semibold text-white">
-            Por Que Escolher Nosso Serviço?
+            Porque escolher nossa liga?
           </h2>
           <p className="mb-4 text-white">
-            Com um olhar atento para design e uma paixão por tecnologia, ofereço
-            soluções web personalizadas que destacam sua marca no ambiente
-            digital. Meu processo começa com a compreensão de suas necessidades,
-            seguindo para o desenvolvimento de uma solução única que comunica
-            sua mensagem de forma eficaz.
-          </p>
-          <p className="mb-4 text-white">
-            Cada projeto é uma nova história, e estou aqui para garantir que a
-            sua seja contada da melhor maneira possível. Utilizando as últimas
-            tecnologias e práticas de desenvolvimento, asseguro que seu site
-            seja não apenas visualmente atraente, mas também funcional, seguro e
-            otimizado para motores de busca.
+            A Liga Acadêmica de Enfermagem em Cardiologia é uma entidade
+            comprometida com o desenvolvimento integral dos estudantes de
+            enfermagem na área cardiológica. Além de promover atividades de
+            ensino, pesquisa e extensão voltadas para o cuidado ao paciente
+            cardíaco, também incentivamos a participação em congressos,
+            simpósios e eventos científicos relacionados à cardiologia. Buscamos
+            engajar os membros em projetos sociais que impactam positivamente a
+            comunidade, além de outras iniciativas acadêmicas e sociais que
+            enriquecem a formação profissional e pessoal dos participantes.
           </p>
         </div>
       </div>
