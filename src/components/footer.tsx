@@ -11,7 +11,7 @@ import { MdEmail } from 'react-icons/md'
 export function Footer() {
   return (
     <footer className="bg-white p-6 text-white">
-      <div className="flex flex-col items-center justify-center space-y-8 px-4 sm:px-8 md:flex-col lg:flex-row lg:space-x-48 xl:flex-row">
+      <div className="flex flex-col items-center justify-center space-y-1 px-4 sm:px-8 md:flex-col lg:flex-row lg:space-x-16 xl:flex-row 2xl:mx-16 2xl:justify-between">
         <div className="mb-8 mr-6 flex items-center justify-start">
           <img
             src="https://i.imgur.com/vXFgf59.png"
@@ -21,7 +21,7 @@ export function Footer() {
           <img
             src="https://i.imgur.com/o9pbYku.png"
             alt="Logo"
-            className="w-15 h-16 lg:mr-4 xl:h-[70px]"
+            className="w-15 mt-1 h-16 lg:mr-1 xl:h-[70px]"
           />
           <img
             src="https://i.imgur.com/RGN01cM.png"
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col items-center lg:items-end">
           <span className="mb-2 text-xl text-gray-600">Siga-nos</span>
-          <div className="mb-16 flex space-x-4">
+          <div className="flex space-x-4 md:mb-0 lg:mb-16">
             <a
               href="#"
               target="_blank"

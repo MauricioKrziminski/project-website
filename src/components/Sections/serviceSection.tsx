@@ -8,8 +8,8 @@ export function ServicesSection() {
         <h2 className="mb-6 text-3xl font-extrabold text-white">
           Nossos Representantes
         </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
+        <div className="flex gap-6 overflow-x-auto lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3">
+          <div className="sm:min-w-[calc(33.333% - 1.5rem)] min-w-[90%] rounded-lg bg-gray-50 p-6 shadow-lg md:h-full md:min-w-[50%]">
             <h3 className="mb-4 text-xl font-semibold">Presidente Fundador</h3>
             <img
               src="https://i.imgur.com/8shyjJi.jpg"
@@ -40,7 +40,7 @@ export function ServicesSection() {
             </div>
           </div>
 
-          <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
+          <div className="sm:min-w-[calc(33.333% - 1.5rem)] min-w-[90%] rounded-lg bg-gray-50 p-6 shadow-lg md:h-full md:min-w-[50%]">
             <h3 className="mb-4 text-xl font-semibold">Professor Fundador</h3>
             <img
               src="https://i.imgur.com/omRnwdA.jpg"
@@ -71,7 +71,7 @@ export function ServicesSection() {
             </div>
           </div>
 
-          <div className="rounded-lg bg-gray-50 p-6 shadow-lg">
+          <div className="sm:min-w-[calc(33.333% - 1.5rem)] min-w-[90%] rounded-lg bg-gray-50 p-6 shadow-lg md:h-full md:min-w-[50%]">
             <h3 className="mb-4 text-xl font-semibold">Bolão Moedas</h3>
             <img
               src="https://i.imgur.com/42vigke.jpg"
