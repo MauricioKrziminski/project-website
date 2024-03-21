@@ -12,7 +12,6 @@ export function AboutSection() {
             autoPlay={true}
             loop
             muted
-            playsInline
           ></video>
         </div>
 
