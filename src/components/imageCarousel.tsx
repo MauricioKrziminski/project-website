@@ -13,7 +13,7 @@ export function ImageCarousel() {
   const [isPaused, setIsPaused] = useState(false)
   const images = [
     {
-      src: 'https://i.imgur.com/zmdtJZ4.png',
+      src: 'https://i.imgur.com/DoiaaFe.png',
       mobileSrc: 'https://i.imgur.com/81MQOAx.png',
       buttonText: 'Clique aqui para comprar',
       link: 'https://pay.kiwify.com.br/xJ644KN',
@@ -75,7 +75,7 @@ export function ImageCarousel() {
                   href={image.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute bottom-[35%] left-[30%] h-[10%] w-[50%] -translate-x-1/2 transform bg-transparent text-transparent md:h-[15%] md:w-[30%] lg:bottom-[23%] lg:h-[20%] custom-lg:left-[32%] custom-lg:w-[53%] custom-xl:left-[35%] custom-xl:w-[45%]"
+                  className="absolute bottom-[35%] left-[30%] h-[10%] w-[50%] -translate-x-1/2 transform bg-transparent text-transparent md:h-[15%] md:w-[30%] lg:bottom-[20%] lg:h-[21%] custom-lg:left-[32%] custom-lg:w-[53%] custom-xl:left-[35%] custom-xl:w-[43%]"
                 >
                   {image.buttonText}
                 </a>

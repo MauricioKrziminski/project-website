@@ -4,6 +4,7 @@ import { AboutSection } from '@/components/Sections/aboutSection'
 import { ServicesSection } from '@/components/Sections/serviceSection'
 import { ContactSection } from '@/components/Sections/contactSection'
 import { HomeSection } from '@/components/Sections/homeSection'
+import { RedesSection } from '@/components/Sections/redesSection'
 import { Footer } from '@/components/footer'
 
 export default function Home() {
@@ -21,6 +22,10 @@ export default function Home() {
 
         <section id="representantes">
           <ServicesSection />
+        </section>
+
+        <section id="redes">
+          <RedesSection />
         </section>
 
         <section id="contact">

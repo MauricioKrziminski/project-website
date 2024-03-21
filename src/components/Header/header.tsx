@@ -12,7 +12,13 @@ export function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'apresentação', 'representantes', 'contact']
+      const sections = [
+        'home',
+        'apresentação',
+        'representantes',
+        'redes',
+        'contact',
+      ]
       const scrollTop = window.pageYOffset + window.innerHeight / 3
 
       sections.forEach((section) => {
@@ -110,8 +116,19 @@ export function Header() {
                 className={getIconClassName('representantes')}
                 onClick={handleLinkClick}
               >
+                <span className="inline text-lg">Representantes</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="redes"
+                smooth={true}
+                duration={100}
+                className={getIconClassName('redes')}
+                onClick={handleLinkClick}
+              >
                 <span className="inline whitespace-nowrap text-lg">
-                  Representantes
+                  Nossas Redes
                 </span>
               </Link>
             </li>
