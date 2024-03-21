@@ -1,14 +1,30 @@
+'use client'
+import { useRef } from 'react'
 import { BsInstagram, BsLinkedin } from 'react-icons/bs'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 /* eslint-disable @next/next/no-img-element */
 export function ServicesSection() {
+  const scrollRef = useRef<HTMLDivElement>(null)
+
+  const scroll = (scrollOffset: number) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({
+        left: scrollRef.current.scrollLeft + scrollOffset,
+        behavior: 'smooth',
+      })
+    }
+  }
   return (
     <div className="min-h-[600px] bg-[url('https://i.imgur.com/QlCR9go.png')] bg-cover bg-no-repeat py-12">
       <div className="mx-auto mt-8 flex max-w-4xl flex-col justify-center px-4 sm:px-6 lg:px-8">
         <h2 className="mb-6 text-3xl font-extrabold text-white">
           Nossos Representantes
         </h2>
-        <div className="flex gap-6 overflow-x-auto lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3">
+        <div
+          className="flex gap-6 overflow-x-auto lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3"
+          ref={scrollRef}
+        >
           <div className="sm:min-w-[calc(33.333% - 1.5rem)] min-w-[90%] rounded-lg bg-gray-50 p-6 shadow-lg md:h-full md:min-w-[50%]">
             <h3 className="mb-4 text-xl font-semibold">Presidente Fundador</h3>
             <img
@@ -101,6 +117,20 @@ export function ServicesSection() {
               </a>
             </div>
           </div>
+        </div>
+        <div className="mt-10 flex items-center justify-center space-x-4 lg:hidden">
+          <button
+            onClick={() => scroll(-300)}
+            className="rounded-md bg-gray-200 p-1 hover:bg-black hover:text-white"
+          >
+            <IoIosArrowBack className="text-2xl" />
+          </button>
+          <button
+            onClick={() => scroll(300)}
+            className="rounded-md bg-gray-200 p-1 hover:bg-black hover:text-white"
+          >
+            <IoIosArrowForward className="text-2xl" />
+          </button>
         </div>
       </div>
     </div>
