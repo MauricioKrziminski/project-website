@@ -3,7 +3,7 @@ export function AboutSection() {
   return (
     <div className="mx-auto mt-0 flex min-h-[500px] justify-center bg-gray-900 p-6 shadow-md">
       <div className="flex flex-col items-center justify-center space-y-8 md:flex-col lg:flex-col xl:flex-row xl:space-x-14 xl:px-10 2xl:w-5/6 2xl:flex-row 2xl:space-x-14">
-        <div className="flex w-[350px] justify-center md:w-5/6 lg:h-96 lg:w-5/6">
+        <div className="flex w-[350px] justify-center lg:w-5/6">
           <video
             className="h-[200px] rounded-xl shadow-xl lg:h-full"
             src="/assets/video.mp4"
