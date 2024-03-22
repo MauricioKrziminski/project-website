@@ -119,7 +119,7 @@ export function Header() {
                 <span className="inline text-lg">Representantes</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="redes"
                 smooth={true}
@@ -131,7 +131,7 @@ export function Header() {
                   Nossas Redes
                 </span>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="contact"

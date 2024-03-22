@@ -99,6 +99,7 @@ export function Footer() {
             Desenvolvido por {'  '}
             <a
               href="https://www.mauriciokrziminski.com.br/"
+              target="_blank"
               className="whitespace-nowrap text-base underline"
             >
               Mauricio Krziminski
