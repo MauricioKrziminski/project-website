@@ -63,7 +63,7 @@ export function MaterialsSection() {
                   className="clip-path-custom-buttons flex items-center justify-center rounded bg-blue-500 px-6 py-2 font-bold text-white hover:bg-blue-700"
                 >
                   Download Wallpaper Tablet
-                  {isOpenDesktop ? (
+                  {isOpenTablet ? (
                     <IoIosArrowUp className="ml-2" />
                   ) : (
                     <IoIosArrowDown className="ml-2" />
@@ -87,7 +87,7 @@ export function MaterialsSection() {
                   className="clip-path-custom-buttons flex items-center justify-center rounded bg-blue-500 px-6 py-2 font-bold text-white hover:bg-blue-700"
                 >
                   Download Wallpaper Mobile
-                  {isOpenDesktop ? (
+                  {isOpenMobile ? (
                     <IoIosArrowUp className="ml-2" />
                   ) : (
                     <IoIosArrowDown className="ml-2" />
