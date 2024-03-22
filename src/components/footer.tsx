@@ -1,17 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import {
-  BsSpotify,
-  BsWhatsapp,
-  BsInstagram,
-  BsYoutube,
-  BsTwitter,
-} from 'react-icons/bs'
+import { BsSpotify, BsInstagram, BsYoutube } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 
 export function Footer() {
   return (
     <footer className="bg-white p-6 text-white">
-      <div className="flex flex-col items-center justify-center space-y-1 px-4 sm:px-8 md:flex-col lg:flex-row lg:space-x-16 xl:flex-row 2xl:mx-16 2xl:justify-between">
+      <div className="flex flex-col items-center justify-center space-y-1 px-4 sm:px-8 md:flex-col lg:flex-row lg:justify-between xl:flex-row xl:justify-between 2xl:mx-16 2xl:justify-between">
         <div className="mb-8 mr-6 flex items-center justify-start">
           <img
             src="https://i.imgur.com/vXFgf59.png"
@@ -30,19 +24,9 @@ export function Footer() {
           />
         </div>
         <div className="flex justify-center">
-          <div className="mb-10 flex flex-col items-start">
+          <div className="mb-10 flex flex-col items-start lg:mr-8 xl:mr-16 2xl:mr-24">
             <p className="mb-4 text-center text-xl text-gray-600">
               Contate-nos
-            </p>
-            {/* <p className="text-start text-gray-600">
-              Matriz | Pedro Adams Filho, 5857 - Centro, NH - RS
-            </p>
-            <p className="text-start text-gray-600">
-              Filial | Rubem Berta, 38 - Vila Nova, NH - RS
-            </p> */}
-            <p className="mb-2 flex flex-row text-start text-gray-600">
-              <BsWhatsapp size={20} className="mr-2" />
-              (51) x xxxx-xxxx
             </p>
             <a
               href="mailto:ligadecardiouniritter@gmail.com"
@@ -79,14 +63,6 @@ export function Footer() {
               className="text-gray-600"
             >
               <BsYoutube size={24} />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600"
-            >
-              <BsTwitter size={24} />
             </a>
           </div>
         </div>

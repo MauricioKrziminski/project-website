@@ -4,7 +4,7 @@ import { PresentationSection } from '@/components/Sections/presentationSection'
 import { RepresentativesSection } from '@/components/Sections/representativesSection'
 import { ContactSection } from '@/components/Sections/contactSection'
 import { HomeSection } from '@/components/Sections/homeSection'
-// import { RedesSection } from '@/components/Sections/redesSection'
+import { MaterialsSection } from '@/components/Sections/materialsSection'
 import { Footer } from '@/components/footer'
 
 export default function Home() {
@@ -16,17 +16,17 @@ export default function Home() {
           <HomeSection />
         </section>
 
-        <section id="apresentação">
+        <section id="presentation">
           <PresentationSection />
         </section>
 
-        <section id="representantes">
+        <section id="representatives">
           <RepresentativesSection />
         </section>
 
-        {/* <section id="redes">
-          <RedesSection />
-        </section> */}
+        <section id="materials">
+          <MaterialsSection />
+        </section>
 
         <section id="contact">
           <ContactSection />

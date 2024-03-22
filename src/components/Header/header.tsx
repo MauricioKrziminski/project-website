@@ -14,9 +14,9 @@ export function Header() {
     const handleScroll = () => {
       const sections = [
         'home',
-        'apresentação',
-        'representantes',
-        'redes',
+        'presentation',
+        'representatives',
+        'materials',
         'contact',
       ]
       const scrollTop = window.pageYOffset + window.innerHeight / 3
@@ -99,10 +99,10 @@ export function Header() {
             </li>
             <li>
               <Link
-                to="apresentação"
+                to="presentation"
                 smooth={true}
                 duration={100}
-                className={getIconClassName('apresentação')}
+                className={getIconClassName('presentation')}
                 onClick={handleLinkClick}
               >
                 <span className="inline text-lg">Apresentação</span>
@@ -110,28 +110,28 @@ export function Header() {
             </li>
             <li>
               <Link
-                to="representantes"
+                to="representatives"
                 smooth={true}
                 duration={100}
-                className={getIconClassName('representantes')}
+                className={getIconClassName('representatives')}
                 onClick={handleLinkClick}
               >
                 <span className="inline text-lg">Representantes</span>
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link
-                to="redes"
+                to="materials"
                 smooth={true}
                 duration={100}
-                className={getIconClassName('redes')}
+                className={getIconClassName('materials')}
                 onClick={handleLinkClick}
               >
                 <span className="inline whitespace-nowrap text-lg">
-                  Nossas Redes
+                  Materiais
                 </span>
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link
                 to="contact"
