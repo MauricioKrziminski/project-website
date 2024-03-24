@@ -1,11 +1,47 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'
 
 export function MaterialsSection() {
   const [isOpenDesktop, setIsOpenDesktop] = useState(false)
   const [isOpenTablet, setIsOpenTablet] = useState(false)
   const [isOpenMobile, setIsOpenMobile] = useState(false)
+
+  const refDesktopDropdown = useRef<HTMLDivElement>(null)
+  const refTabletDropdown = useRef<HTMLDivElement>(null)
+  const refMobileDropdown = useRef<HTMLDivElement>(null)
+  const refDesktopButton = useRef<HTMLButtonElement>(null)
+  const refTabletButton = useRef<HTMLButtonElement>(null)
+  const refMobileButton = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement
+
+      const clickedOnDropdownButton =
+        refDesktopButton.current?.contains(target) ||
+        refTabletButton.current?.contains(target) ||
+        refMobileButton.current?.contains(target)
+
+      if (clickedOnDropdownButton) return
+
+      if (!refDesktopDropdown.current?.contains(target)) {
+        setIsOpenDesktop(false)
+      }
+      if (!refTabletDropdown.current?.contains(target)) {
+        setIsOpenTablet(false)
+      }
+      if (!refMobileDropdown.current?.contains(target)) {
+        setIsOpenMobile(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   return (
     <div className="flex min-h-[550px] items-center justify-center bg-gray-900">
@@ -21,10 +57,11 @@ export function MaterialsSection() {
               seu dispositivo.
             </p>
             <div className="clip-path-custom mt-6 flex flex-col items-center">
-              <div className="mb-2">
+              <div className="mb-2" ref={refDesktopDropdown}>
                 <button
+                  ref={refDesktopButton}
                   onClick={() => setIsOpenDesktop(!isOpenDesktop)}
-                  className="clip-path-custom-buttons flex items-center justify-center rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+                  className="clip-path-custom-buttons flex items-center justify-center rounded bg-[#8d3f60] px-4 py-2 font-bold text-white hover:bg-[#ad4f76]"
                 >
                   Download Wallpaper Desktop
                   {isOpenDesktop ? (
@@ -34,22 +71,22 @@ export function MaterialsSection() {
                   )}
                 </button>
                 {isOpenDesktop && (
-                  <div className="mt-1 w-72 rounded-md bg-blue-500 py-2 shadow-lg">
+                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60] py-2 shadow-lg">
                     <a
                       href="https://drive.google.com/uc?export=download&id=1Pak9uAupWub9OhAVXrcD-2zoG1Pvo-SW"
-                      className="block px-4 py-2 text-sm text-white hover:bg-blue-400"
+                      className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"
                     >
                       FullHD
                     </a>
                     <a
                       href="https://drive.google.com/uc?export=download&id=1Pak9uAupWub9OhAVXrcD-2zoG1Pvo-SW"
-                      className="block px-4 py-2 text-sm text-white hover:bg-blue-400"
+                      className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"
                     >
                       HD
                     </a>
                     <a
                       href="https://drive.google.com/uc?export=download&id=1_S_0f-f_ix3PLtAbC92WVi3qbq2JMTKB"
-                      className="block px-4 py-2 text-sm text-white hover:bg-blue-400"
+                      className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"
                     >
                       NoteBook
                     </a>
@@ -57,10 +94,11 @@ export function MaterialsSection() {
                 )}
               </div>
 
-              <div className="mb-2">
+              <div className="mb-2" ref={refTabletDropdown}>
                 <button
+                  ref={refTabletButton}
                   onClick={() => setIsOpenTablet(!isOpenTablet)}
-                  className="clip-path-custom-buttons flex items-center justify-center rounded bg-blue-500 px-6 py-2 font-bold text-white hover:bg-blue-700"
+                  className="clip-path-custom-buttons flex items-center justify-center rounded bg-[#8d3f60] px-6 py-2 font-bold text-white hover:bg-[#ad4f76]"
                 >
                   Download Wallpaper Tablet
                   {isOpenTablet ? (
@@ -70,10 +108,10 @@ export function MaterialsSection() {
                   )}
                 </button>
                 {isOpenTablet && (
-                  <div className="mt-1 w-72 rounded-md bg-blue-500 py-2 shadow-lg">
+                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60] py-2 shadow-lg">
                     <a
                       href="https://drive.google.com/uc?export=download&id=16BYz_6Be8q3eHZ8HgYqor1y3O6TEwfr7"
-                      className="block px-4 py-2 text-sm text-white hover:bg-blue-400"
+                      className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"
                     >
                       Tablet IPad/Samsung
                     </a>
@@ -81,10 +119,11 @@ export function MaterialsSection() {
                 )}
               </div>
 
-              <div>
+              <div ref={refMobileDropdown}>
                 <button
+                  ref={refMobileButton}
                   onClick={() => setIsOpenMobile(!isOpenMobile)}
-                  className="clip-path-custom-buttons flex items-center justify-center rounded bg-blue-500 px-6 py-2 font-bold text-white hover:bg-blue-700"
+                  className="clip-path-custom-buttons flex items-center justify-center rounded bg-[#8d3f60] px-6 py-2 font-bold text-white hover:bg-[#ad4f76]"
                 >
                   Download Wallpaper Mobile
                   {isOpenMobile ? (
@@ -94,16 +133,16 @@ export function MaterialsSection() {
                   )}
                 </button>
                 {isOpenMobile && (
-                  <div className="mt-1 w-72 rounded-md bg-blue-500 py-2 shadow-lg">
+                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60] py-2 shadow-lg">
                     <a
                       href="https://drive.google.com/uc?export=download&id=1BP6OZxHSJ54NNrsVdVxeBmJgFZGi4LHT"
-                      className="block px-4 py-2 text-sm text-white hover:bg-blue-400"
+                      className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"
                     >
                       Android
                     </a>
                     <a
                       href="https://drive.google.com/uc?export=download&id=1lxlnId6yL3LRpB-JEgOjUQCxuPotgAmi"
-                      className="block px-4 py-2 text-sm text-white hover:bg-blue-400"
+                      className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"
                     >
                       Iphone
                     </a>
