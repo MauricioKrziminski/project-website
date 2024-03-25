@@ -5,8 +5,8 @@ import { MdEmail } from 'react-icons/md'
 export function Footer() {
   return (
     <footer className="bg-white p-6 text-white">
-      <div className="flex flex-col items-center justify-center space-y-1 px-4 sm:px-8 md:flex-col lg:flex-row lg:justify-between xl:flex-row xl:justify-between 2xl:mx-16 2xl:justify-between">
-        <div className="mb-8 mr-6 flex items-center justify-start">
+      <div className="flex flex-col items-center justify-center space-y-1 md:flex-col lg:flex-row lg:justify-between xl:flex-row xl:justify-between 2xl:mx-16 2xl:justify-between">
+        <div className="mb-8 flex items-center justify-start">
           <img
             src="https://i.imgur.com/vXFgf59.png"
             alt="Logo"
@@ -25,7 +25,7 @@ export function Footer() {
         </div>
         <div className="flex justify-center">
           <div className="mb-10 flex flex-col items-start lg:mr-8 xl:mr-16 2xl:mr-24">
-            <p className="mb-4 text-center text-xl text-gray-600">
+            <p className="mb-4 ml-20 text-center text-xl text-gray-600 md:ml-0">
               Contate-nos
             </p>
             <a

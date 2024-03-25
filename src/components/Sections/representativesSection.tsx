@@ -40,7 +40,7 @@ export function RepresentativesSection() {
             <p className="text-center italic">
               Responsável por atividades técnicas e elaboração de conteúdos.
             </p>
-            <div className="mr-2 mt-4 flex justify-end space-x-3">
+            <div className="mr-2 mt-10 flex justify-end space-x-3">
               <a
                 target="_blank"
                 href="https://www.instagram.com/jeaann.dp/"
@@ -73,7 +73,7 @@ export function RepresentativesSection() {
             <p className="text-center italic">
               Responsável por atividades acadêmicas e orientação de projetos.
             </p>
-            <div className="mr-2 mt-4 flex justify-end space-x-3">
+            <div className="mr-2 mt-10 flex justify-end space-x-3">
               <a
                 target="_blank"
                 href="https://www.instagram.com/professornichollas/"
@@ -106,7 +106,7 @@ export function RepresentativesSection() {
             <p className="text-center italic">
               Responsável pelas finanças e produtos da liga.
             </p>
-            <div className="mr-2 mt-10 flex justify-end space-x-3">
+            <div className="mr-2 mt-10 flex justify-end space-x-3 md:mt-16">
               <a
                 target="_blank"
                 href="https://www.instagram.com/iisamoreiraa_/"

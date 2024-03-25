@@ -7,6 +7,7 @@ import {
   IoIosPause,
   IoIosPlay,
 } from 'react-icons/io'
+import { SiSpotify, SiYoutube, SiInstagram } from 'react-icons/si'
 
 export function ImageCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -19,10 +20,13 @@ export function ImageCarousel() {
       link: 'https://pay.kiwify.com.br/xJ644KN',
     },
     {
-      src: 'https://www.10wallpaper.com/wallpaper/3840x2400/1804/Mountain_Lake_Nature_4k_HD_Landscape_3840x2400.jpg',
+      src: 'https://i.imgur.com/lYF5Y22.png',
+      mobileSrc: 'https://i.imgur.com/uesVvyN.png',
+      buttonText: 'Clique aqui para comprar',
+      link: 'https://hotmart.com/pt-br/marketplace/produtos/e-book-saude-do-adulto-em-mapas-mentais/O73040457I?ref=J73057102B',
     },
     {
-      src: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg',
+      src: 'https://i.imgur.com/vHRlDNB.png',
     },
   ]
 
@@ -79,6 +83,31 @@ export function ImageCarousel() {
                 >
                   {image.buttonText}
                 </a>
+              )}
+              {currentSlide === 2 && index === 2 && (
+                <div className="absolute bottom-36 left-2/3 flex -translate-x-1/2 space-x-8">
+                  <a
+                    href="https://spotify.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SiSpotify className="text-8xl text-green-300" />
+                  </a>
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SiYoutube className="text-8xl text-red-600" />
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SiInstagram className="text-8xl text-blue-700" />
+                  </a>
+                </div>
               )}
             </div>
           ))}
