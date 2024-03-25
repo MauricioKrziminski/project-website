@@ -71,7 +71,7 @@ export function MaterialsSection() {
                   )}
                 </button>
                 {isOpenDesktop && (
-                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60] py-2 shadow-lg">
+                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60]/80 py-2 shadow-lg">
                     <a
                       href="https://drive.google.com/uc?export=download&id=1Pak9uAupWub9OhAVXrcD-2zoG1Pvo-SW"
                       className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"
@@ -108,7 +108,7 @@ export function MaterialsSection() {
                   )}
                 </button>
                 {isOpenTablet && (
-                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60] py-2 shadow-lg">
+                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60]/80 py-2 shadow-lg">
                     <a
                       href="https://drive.google.com/uc?export=download&id=16BYz_6Be8q3eHZ8HgYqor1y3O6TEwfr7"
                       className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"
@@ -133,7 +133,7 @@ export function MaterialsSection() {
                   )}
                 </button>
                 {isOpenMobile && (
-                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60] py-2 shadow-lg">
+                  <div className="mt-1 w-72 rounded-md bg-[#8d3f60]/80 py-2 shadow-lg">
                     <a
                       href="https://drive.google.com/uc?export=download&id=1BP6OZxHSJ54NNrsVdVxeBmJgFZGi4LHT"
                       className="block px-4 py-2 text-sm text-white hover:bg-[#ad4f76]"

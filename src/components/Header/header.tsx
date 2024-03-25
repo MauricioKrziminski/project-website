@@ -39,7 +39,7 @@ export function Header() {
   }, [])
 
   const getIconClassName = (section: string) =>
-    `cursor-pointer ${activeSection === section ? 'text-violet-500' : 'text-gray-900 hover:text-violet-500'}`
+    `cursor-pointer ${activeSection === section ? 'text-[#8d3f60]' : 'text-gray-900 hover:text-[#8d3f60]'}`
 
   const handleLinkClick = () => {
     setIsMenuOpen(false)

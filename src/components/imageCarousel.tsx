@@ -21,12 +21,13 @@ export function ImageCarousel() {
     },
     {
       src: 'https://i.imgur.com/lYF5Y22.png',
-      mobileSrc: 'https://i.imgur.com/uesVvyN.png',
+      mobileSrc: 'https://i.imgur.com/jnGMS5Z.png',
       buttonText: 'Clique aqui para comprar',
       link: 'https://hotmart.com/pt-br/marketplace/produtos/e-book-saude-do-adulto-em-mapas-mentais/O73040457I?ref=J73057102B',
     },
     {
       src: 'https://i.imgur.com/vHRlDNB.png',
+      mobileSrc: 'https://i.imgur.com/4ynsU5d.png',
     },
   ]
 
@@ -85,27 +86,27 @@ export function ImageCarousel() {
                 </a>
               )}
               {currentSlide === 2 && index === 2 && (
-                <div className="absolute bottom-36 left-2/3 flex -translate-x-1/2 space-x-8">
+                <div className="absolute bottom-28 left-3/4 ml-3 flex -translate-x-1/2 space-x-6 md:bottom-20 md:left-2/3 md:space-x-6 lg:bottom-24 lg:left-2/3 lg:space-x-8 xl:bottom-36 xl:left-2/3 xl:space-x-12 2xl:left-2/3 2xl:space-x-16">
                   <a
                     href="https://spotify.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <SiSpotify className="text-8xl text-green-300" />
+                    <SiSpotify className="text-4xl text-green-300 md:text-5xl lg:text-7xl xl:text-8xl" />
                   </a>
                   <a
                     href="https://youtube.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <SiYoutube className="text-8xl text-red-600" />
+                    <SiYoutube className="text-4xl text-red-600 md:text-5xl lg:text-7xl xl:text-8xl" />
                   </a>
                   <a
                     href="https://instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <SiInstagram className="text-8xl text-blue-700" />
+                    <SiInstagram className="text-4xl text-blue-700 md:text-5xl lg:text-7xl xl:text-8xl" />
                   </a>
                 </div>
               )}
