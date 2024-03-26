@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { BsSpotify, BsInstagram, BsYoutube } from 'react-icons/bs'
+import { BsSpotify, BsInstagram, BsYoutube, BsTiktok } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 
 export function Footer() {
@@ -41,7 +41,7 @@ export function Footer() {
           <span className="mb-2 text-xl text-gray-600">Siga-nos</span>
           <div className="flex space-x-4 md:mb-0 lg:mb-16">
             <a
-              href="#"
+              href="https://open.spotify.com/show/3XOpZf77nZQ7SoiK0KT1Vb?si=c450dffb0bd244b5"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600"
@@ -49,7 +49,7 @@ export function Footer() {
               <BsSpotify size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/laec.uniritter/similar_accounts/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600"
@@ -57,12 +57,20 @@ export function Footer() {
               <BsInstagram size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/@ligadecardiologiauniritter7461"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600"
             >
               <BsYoutube size={24} />
+            </a>
+            <a
+              href="https://www.tiktok.com/@laecenf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600"
+            >
+              <BsTiktok size={24} />
             </a>
           </div>
         </div>
