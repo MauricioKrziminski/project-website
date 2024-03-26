@@ -7,7 +7,7 @@ import {
   IoIosPause,
   IoIosPlay,
 } from 'react-icons/io'
-import { SiSpotify, SiYoutube, SiInstagram } from 'react-icons/si'
+import { SiSpotify, SiYoutube, SiInstagram, SiTiktok } from 'react-icons/si'
 
 export function ImageCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -88,25 +88,32 @@ export function ImageCarousel() {
               {currentSlide === 2 && index === 2 && (
                 <div className="absolute bottom-28 left-3/4 ml-3 flex -translate-x-1/2 space-x-6 md:bottom-20 md:left-2/3 md:space-x-6 lg:bottom-24 lg:left-2/3 lg:space-x-8 xl:bottom-36 xl:left-2/3 xl:space-x-12 2xl:left-2/3 2xl:space-x-16">
                   <a
-                    href="https://spotify.com"
+                    href="https://open.spotify.com/show/3XOpZf77nZQ7SoiK0KT1Vb?si=c450dffb0bd244b5"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <SiSpotify className="text-4xl text-green-300 md:text-5xl lg:text-7xl xl:text-8xl" />
                   </a>
                   <a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/@ligadecardiologiauniritter7461"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <SiYoutube className="text-4xl text-red-600 md:text-5xl lg:text-7xl xl:text-8xl" />
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/laec.uniritter/similar_accounts/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <SiInstagram className="text-4xl text-blue-700 md:text-5xl lg:text-7xl xl:text-8xl" />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@laecenf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SiTiktok className="text-4xl text-black md:text-5xl lg:text-7xl xl:text-8xl" />
                   </a>
                 </div>
               )}
